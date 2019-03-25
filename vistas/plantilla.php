@@ -7,6 +7,15 @@
 	<link rel="stylesheet" href="<?php echo SERVERURL?>vistas/css/main.css">
 </head>
 <body>
+	<?php 
+		require_once "./controladores/viewsController.php";
+
+		$vw = new viewsController();
+		$viewR = $vw-> obt_views_controller();
+		if($viewR == "login"):
+			require_once "./vistas/contenidos/login-view.php";
+		else:	
+	?>
 	<!-- SideBar -->
 		<?php include "vistas/modulos/navlatera.php"; ?>     
 	<!-- Content page-->
@@ -14,9 +23,10 @@
 		<!-- NavBar -->
 		<?php include "vistas/modulos/navbar.php"; ?>  
 		<!-- Content page -->
-        
+		<?php require_once $viewR; ?>
 
 	</section>
+	<?php endif; ?>
 	
 	<!--====== Scripts -->
 	<?php include "vistas/modulos/script.php"; ?>

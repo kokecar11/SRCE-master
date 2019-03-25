@@ -28,7 +28,7 @@
     <!-- SideBar Menu -->
     <ul class="list-unstyled full-box dashboard-sideBar-Menu">
         <li>
-            <a href="<?php echo SERVERURL?>vistas/contenidos/home-view.php">
+            <a href="home.html">
                 <i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
             </a>
         </li>
