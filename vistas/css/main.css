@@ -93,13 +93,13 @@ body, html{
 	left: 0;
 	z-index: 2;
 	background-image: url('../assets/img/sideBar-font.jpg');
-	border-right: 1px solid rgba(255, 255, 255, .4);
+	border-right: 1px solid #2170b3;
 	overflow: hidden;
 }
 .dashboard-sideBar-ct{
 	position: relative;
 	height: 100%;
-	background-color: rgba(0, 0, 0, .77);
+	background-color: rgba(0, 0, 0, 0);
 	padding: 0 10px;
 	padding-bottom: 30px;
 }
@@ -107,8 +107,8 @@ body, html{
 .dashboard-sideBar-title > i{
 	height: 50px;
 	line-height: 50px;
-	color: #fff;
-	font-size: 20px;
+	color: #2170b3;
+	font-size: 25px;
 }
 .dashboard-sideBar-title{
 	position: relative;
@@ -123,7 +123,7 @@ body, html{
 .dashboard-sideBar-UserInfo{
 	border-top: 1px solid rgba(255, 255, 255, .3);
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	color: #fff;
+	color: #2170b3;
 	font-size: 14px;
 	padding: 20px 0;
 }
@@ -149,7 +149,7 @@ body, html{
 	transition: all .3s ease-in-out;
 }
 .dashboard-sideBar-UserInfo ul > li > a:hover{
-	color: #FF5722;
+	color: #2170b3;
 }
 .dashboard-sideBar-Menu{
 	padding-top: 15px;
@@ -178,7 +178,7 @@ body, html{
 	outline: none;
 }
 .dashboard-sideBar-Menu > li > a:hover{
-	background-color: rgba(255, 255, 255, .1);
+	background-color: #2170b3;
 }
 .dashboard-sideBar-Menu > li > ul{
 	position: relative;
@@ -204,8 +204,8 @@ body, html{
 	outline: none;
 }
 .dashboard-sideBar-Menu > li > ul > li > a:hover{
-	border-left: 3px solid #FF5722;
-	color: #FF5722;
+	border-left: 3px solid #2170b3;
+	color: #2170b3;
 }
 /*contentPage*/
 .dashboard-contentPage{
@@ -224,7 +224,7 @@ body, html{
 	outline: none;
 }
 .dashboard-Navbar{
-	background-color: #000;
+	background-color: rgb(238, 180, 55);
 	overflow: hidden;
 }
 .dashboard-Navbar > ul >li,
@@ -241,13 +241,13 @@ body, html{
 }
 .dashboard-Navbar > ul > li > a:hover{
 	background-color: rgba(255, 255, 255, .1);
-	color: #FF5722;
+	color: #2170b3;
 }
 .dashboard-Navbar > ul > li > a > span.badge{
 	position: absolute;
 	top: 7px;
 	right: 6px;
-	background-color: #FF5722;
+	background-color: #2170b3;
 	transition: all .3s ease-in-out;
 }
 .dashboard-Navbar > ul > li > a:hover span.badge{
@@ -290,7 +290,7 @@ body, html{
 	font-size: 20px;
 }
 .Notifications-body-title{
-	background-color: #FF5722;
+	background-color: #2170b3;
 	color: #fff;
 	position: relative;
 }
