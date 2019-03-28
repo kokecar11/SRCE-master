@@ -1,6 +1,6 @@
 <?php
 
-    require_once "modelos/viewsModels.php";
+    require_once "./modelos/viewsModels.php";
     class viewsController extends viewsModels{
 
         public function obt_plantilla_controller(){

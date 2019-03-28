@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="page-header">
-        <h1 class="text-titles"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Usuarios <small>ADMINISTRADORES</small></h1>
+        <h1 class="text-titles"><i class="zmdi zmdi-male-alt zmdi-hc-fw"></i> Usuarios <small>CLIENTES</small></h1>
     </div>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptas reiciendis tempora voluptatum eius porro ipsa quae voluptates officiis sapiente sunt dolorem, velit quos a qui nobis sed, dignissimos possimus!</p>
 </div>
@@ -8,28 +8,28 @@
 <div class="container-fluid">
     <ul class="breadcrumb breadcrumb-tabs">
         <li>
-            <a href="<?php echo SERVERURLL?>admin/" class="btn btn-info">
-                <i class="zmdi zmdi-plus"></i> &nbsp; NUEVO ADMINISTRADOR
+            <a href="<?php echo SERVERURLL?>client/" class="btn btn-info">
+                <i class="zmdi zmdi-plus"></i> &nbsp; NUEVO CLIENTE
             </a>
         </li>
         <li>
-            <a href="<?php echo SERVERURLL?>adminlist/" class="btn btn-success">
-                <i class="zmdi zmdi-format-list-bulleted"></i> &nbsp; LISTA DE ADMINISTRADORES
+            <a href="<?php echo SERVERURLL?>clientlist" class="btn btn-success">
+                <i class="zmdi zmdi-format-list-bulleted"></i> &nbsp; LISTA DE CLIENTES
             </a>
         </li>
         <li>
-            <a href="<?php echo SERVERURLL?>adminsearch" class="btn btn-primary">
-                <i class="zmdi zmdi-search"></i> &nbsp; BUSCAR ADMINISTRADOR
+            <a href="<?php echo SERVERURLL?>clientsearch" class="btn btn-primary">
+                <i class="zmdi zmdi-search"></i> &nbsp; BUSCAR CLIENTE
             </a>
         </li>
     </ul>
 </div>
 
-<!-- Panel nuevo administrador -->
+<!-- Panel nuevo cliente -->
 <div class="container-fluid">
     <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title"><i class="zmdi zmdi-plus"></i> &nbsp; NUEVO ADMINISTRADOR</h3>
+            <h3 class="panel-title"><i class="zmdi zmdi-plus"></i> &nbsp; NUEVO CLIENTE</h3>
         </div>
         <div class="panel-body">
             <form>
@@ -59,6 +59,12 @@
                                 <div class="form-group label-floating">
                                     <label class="control-label">Teléfono</label>
                                     <input pattern="[0-9+]{1,15}" class="form-control" type="text" name="telefono-reg" maxlength="15">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">Cargo/Ocupación *</label>
+                                    <input pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,30}" class="form-control" type="text" name="ocupacion-reg" required="" maxlength="30">
                                 </div>
                             </div>
                             <div class="col-xs-12">
@@ -114,45 +120,6 @@
                                             <i class="zmdi zmdi-female"></i> &nbsp; Femenino
                                         </label>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend><i class="zmdi zmdi-star"></i> &nbsp; Nivel de privilegios</legend>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6">
-                                <p class="text-left">
-                                    <div class="label label-success">Nivel 1</div> Control total del sistema
-                                </p>
-                                <p class="text-left">
-                                    <div class="label label-primary">Nivel 2</div> Permiso para registro y actualización
-                                </p>
-                                <p class="text-left">
-                                    <div class="label label-info">Nivel 3</div> Permiso para registro
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="radio radio-primary">
-                                    <label>
-                                        <input type="radio" name="optionsPrivilegio" id="optionsRadios1" value="1">
-                                        <i class="zmdi zmdi-star"></i> &nbsp; Nivel 1
-                                    </label>
-                                </div>
-                                <div class="radio radio-primary">
-                                    <label>
-                                        <input type="radio" name="optionsPrivilegio" id="optionsRadios2" value="2">
-                                        <i class="zmdi zmdi-star"></i> &nbsp; Nivel 2
-                                    </label>
-                                </div>
-                                <div class="radio radio-primary">
-                                    <label>
-                                        <input type="radio" name="optionsPrivilegio" id="optionsRadios3" value="3" checked="">
-                                        <i class="zmdi zmdi-star"></i> &nbsp; Nivel 3
-                                    </label>
                                 </div>
                             </div>
                         </div>

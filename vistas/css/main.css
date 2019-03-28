@@ -35,7 +35,7 @@
 }
 /*============ Estilos generales*/
 body, html{
-	background-color: #eeb437;
+	background-color: #fff;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -58,7 +58,17 @@ body, html{
 .text-titles{
 	font-family: 'RobotoCondensedLight'
 }
+.breadcrumb-tabs{
+	margin-bottom: 15px; 
+	background-color: transparent; 
+	border-bottom: 2px solid #F7F7F7;
+	padding: 0;
+}
 /*============ LogIn*/
+.login-container{
+	height: 100%;
+	background-image: url(../assets/img/login.jpg);
+}
 .logInForm{
 	position: absolute;
 	color: #fff;
@@ -68,9 +78,8 @@ body, html{
 	width: 90%;
 	max-width: 300px;
 	padding: 15px;
-	box-shadow: 0 0 3px rgba(0,0,0,.7);
-	border-radius: 0 0 2px 2px;
-	background-color: #2170b3;
+	border: 1px solid rgba(255,255,255,.3);
+	border-radius: 4px;
 }
 .logInForm p,
 .logInForm label{
@@ -92,14 +101,14 @@ body, html{
 .dashboard-sideBar{
 	left: 0;
 	z-index: 2;
-	background-image: url('../assets/img/sideBar-font.jpg');
-	border-right: 1px solid #2170b3;
+	background-image: url('../assets/img/sideBar.png');
+	border-right: 1px solid rgba(255, 255, 255, .7);
 	overflow: hidden;
 }
 .dashboard-sideBar-ct{
 	position: relative;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(42, 45, 52, 0.7);
 	padding: 0 10px;
 	padding-bottom: 30px;
 }
@@ -107,8 +116,8 @@ body, html{
 .dashboard-sideBar-title > i{
 	height: 50px;
 	line-height: 50px;
-	color: #2170b3;
-	font-size: 25px;
+	color: #fff;
+	font-size: 20px;
 }
 .dashboard-sideBar-title{
 	position: relative;
@@ -123,7 +132,7 @@ body, html{
 .dashboard-sideBar-UserInfo{
 	border-top: 1px solid rgba(255, 255, 255, .3);
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	color: #2170b3;
+	color: #fff;
 	font-size: 14px;
 	padding: 20px 0;
 }
@@ -149,7 +158,7 @@ body, html{
 	transition: all .3s ease-in-out;
 }
 .dashboard-sideBar-UserInfo ul > li > a:hover{
-	color: #2170b3;
+	color: #F7F052;
 }
 .dashboard-sideBar-Menu{
 	padding-top: 15px;
@@ -178,7 +187,7 @@ body, html{
 	outline: none;
 }
 .dashboard-sideBar-Menu > li > a:hover{
-	background-color: #2170b3;
+	background-color: rgba(255, 255, 255, .2);
 }
 .dashboard-sideBar-Menu > li > ul{
 	position: relative;
@@ -204,8 +213,8 @@ body, html{
 	outline: none;
 }
 .dashboard-sideBar-Menu > li > ul > li > a:hover{
-	border-left: 3px solid #2170b3;
-	color: #2170b3;
+	border-left: 3px solid #F7F052;
+	color: #F7F052;
 }
 /*contentPage*/
 .dashboard-contentPage{
@@ -224,7 +233,7 @@ body, html{
 	outline: none;
 }
 .dashboard-Navbar{
-	background-color: #eeb437;
+	background-color: #2A2D34;
 	overflow: hidden;
 }
 .dashboard-Navbar > ul >li,
@@ -241,18 +250,13 @@ body, html{
 }
 .dashboard-Navbar > ul > li > a:hover{
 	background-color: rgba(255, 255, 255, .1);
-	color: #2170b3;
 }
 .dashboard-Navbar > ul > li > a > span.badge{
 	position: absolute;
 	top: 7px;
 	right: 6px;
-	background-color: #2170b3;
+	background-color: #FF5722;
 	transition: all .3s ease-in-out;
-}
-.dashboard-Navbar > ul > li > a:hover span.badge{
-	background-color: #FFF;
-	color: #333;
 }
 /*============ Area de notificaciones*/
 .Notifications-area{
@@ -290,7 +294,7 @@ body, html{
 	font-size: 20px;
 }
 .Notifications-body-title{
-	background-color: #2170b3;
+	background-color: #FF5722;
 	color: #fff;
 	position: relative;
 }
@@ -323,7 +327,7 @@ body, html{
 }
 .tile:hover > .tile-icon > i,
 .tile:hover > .tile-number{
-	color: #2baea8;
+	color: rgba(43, 174, 168, 1);
 }
 .tile-title,
 .tile-icon,
@@ -334,7 +338,7 @@ body, html{
 	height: 40px;
 	line-height: 40px;
 	font-size: 20px;
-	background-color: rgb(168, 247, 243);
+	background-color: rgb(43, 174, 168);
 	color: #fff;
 	top: 0;
 	left: 0;
@@ -354,7 +358,7 @@ body, html{
 }
 .tile-icon > i,
 .tile-number{
-	color: #2baea866;
+	color: rgba(43, 174, 168, .4);
 	transition: all .3s ease-in-out;
 }
 .tile-number{
@@ -547,7 +551,7 @@ body, html{
 		left: 0;
 	}
 	.dashboard-sideBar-ct{
-		background-color: #000;
+		background-color: #2A2D34;
 		border-right: 1px solid rgba(255, 255, 255, .3);
 		z-index: 3;
 		max-width: 270px;

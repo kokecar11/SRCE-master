@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$('.btn-sideBar-SubMenu').on('click', function(){
+	$('.btn-sideBar-SubMenu').on('click', function(e){
+		e.preventDefault();
 		var SubMenu=$(this).next('ul');
 		var iconBtn=$(this).children('.zmdi-caret-down');
 		if(SubMenu.hasClass('show-sideBar-SubMenu')){
@@ -10,7 +11,8 @@ $(document).ready(function(){
 			SubMenu.addClass('show-sideBar-SubMenu');
 		}
 	});
-	$('.btn-exit-system').on('click', function(){
+	$('.btn-exit-system').on('click', function(e){
+		e.preventDefault();
 		swal({
 		  	title: 'Are you sure?',
 		  	text: "The current session will be closed",
@@ -24,7 +26,8 @@ $(document).ready(function(){
 			window.location.href="index.html";
 		});
 	});
-	$('.btn-menu-dashboard').on('click', function(){
+	$('.btn-menu-dashboard').on('click', function(e){
+		e.preventDefault();
 		var body=$('.dashboard-contentPage');
 		var sidebar=$('.dashboard-sideBar');
 		if(sidebar.css('pointer-events')=='none'){
@@ -34,37 +37,6 @@ $(document).ready(function(){
 			body.addClass('no-paddin-left');
 			sidebar.addClass('hide-sidebar').removeClass('show-sidebar');
 		}
-	});
-	$('.btn-Notifications-area').on('click', function(){
-		var NotificationsArea=$('.Notifications-area');
-		if(NotificationsArea.css('opacity')=="0"){
-			NotificationsArea.addClass('show-Notification-area');
-		}else{
-			NotificationsArea.removeClass('show-Notification-area');
-		}
-	});
-	$('.btn-search').on('click', function(){
-		swal({
-		  title: 'What are you looking for?',
-		  confirmButtonText: '<i class="zmdi zmdi-search"></i>  Search',
-		  confirmButtonColor: '#03A9F4',
-		  showCancelButton: true,
-		  cancelButtonColor: '#F44336',
-		  cancelButtonText: '<i class="zmdi zmdi-close-circle"></i> Cancel',
-		  html: '<div class="form-group label-floating">'+
-			  		'<label class="control-label" for="InputSearch">write here</label>'+
-			  		'<input class="form-control" id="InputSearch" type="text">'+
-				'</div>'
-		}).then(function () {
-		  swal(
-		    'You wrote',
-		    ''+$('#InputSearch').val()+'',
-		    'success'
-		  )
-		});
-	});
-	$('.btn-modal-help').on('click', function(){
-		$('#Dialog-Help').modal('show');
 	});
 });
 (function($){

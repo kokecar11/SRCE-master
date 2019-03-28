@@ -40,18 +40,6 @@
             <small>Register</small>
         </div>
     </article>
-    <article class="full-box tile">
-        <div class="full-box tile-title text-center text-titles text-uppercase">
-            Representative
-        </div>
-        <div class="full-box tile-icon text-center">
-            <i class="zmdi zmdi-male-female"></i>
-        </div>
-        <div class="full-box tile-number text-titles">
-            <p class="full-box">70</p>
-            <small>Register</small>
-        </div>
-    </article>
 </div>
 <div class="container-fluid">
     <div class="page-header">
@@ -60,7 +48,7 @@
     <section id="cd-timeline" class="cd-container">
         <div class="cd-timeline-block">
             <div class="cd-timeline-img">
-                <img src="./assets/img/avatar.jpg" alt="user-picture">
+                <img src="<?php echo SERVERURLL?>vistas/assets/avatars/StudetMaleAvatar.png" alt="user-picture">
             </div>
             <div class="cd-timeline-content">
                 <h4 class="text-center text-titles">1 - Name (Admin)</h4>
@@ -73,7 +61,7 @@
         </div>  
         <div class="cd-timeline-block">
             <div class="cd-timeline-img">
-                <img src="./assets/img/avatar.jpg" alt="user-picture">
+                <img src="<?php echo SERVERURLL?>vistas/assets/avatars/StudetMaleAvatar.png" alt="user-picture">
             </div>
             <div class="cd-timeline-content">
                 <h4 class="text-center text-titles">2 - Name (Teacher)</h4>
@@ -86,7 +74,7 @@
         </div>
         <div class="cd-timeline-block">
             <div class="cd-timeline-img">
-                <img src="./assets/img/avatar.jpg" alt="user-picture">
+                <img src="<?php echo SERVERURLL?>vistas/assets/avatars/StudetMaleAvatar.png" alt="user-picture">
             </div>
             <div class="cd-timeline-content">
                 <h4 class="text-center text-titles">3 - Name (Student)</h4>
@@ -99,7 +87,7 @@
         </div>
         <div class="cd-timeline-block">
             <div class="cd-timeline-img">
-                <img src="./assets/img/avatar.jpg" alt="user-picture">
+                <img src="<?php echo SERVERURLL?>vistas/assets/avatars/StudetMaleAvatar.png" alt="user-picture">
             </div>
             <div class="cd-timeline-content">
                 <h4 class="text-center text-titles">4 - Name (Personal Ad.)</h4>
